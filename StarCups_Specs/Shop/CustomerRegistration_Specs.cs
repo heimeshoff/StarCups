@@ -3,7 +3,7 @@
 namespace StarCups_Specs.Shop
 {
     [TestFixture]
-    public partial class Customer_Specs : TestBase
+    public partial class CustomerRegistration_Specs : TestBase
     {
         [Test]
         public void A_customer_can_register()

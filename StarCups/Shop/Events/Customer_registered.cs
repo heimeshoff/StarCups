@@ -1,6 +1,4 @@
-﻿using StarCups.Shop.References;
-
-namespace StarCups.Shop.Events
+﻿namespace StarCups.Shop.Events
 {
     public struct Customer_registered
     {

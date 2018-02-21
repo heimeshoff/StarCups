@@ -1,11 +1,11 @@
 ﻿using System;
+using StarCups.Shop;
 using StarCups.Shop.Commands;
 using StarCups.Shop.Events;
-using StarCups.Shop.References;
 
 namespace StarCups_Specs.Shop
 {
-    public partial class Customer_Specs
+    public partial class CustomerRegistration_Specs
     {
         private object Register_customer(CustomerReference customer, string name, string familyname)
         {
