@@ -49,8 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Shop\Customer_Specs.cs" />
-    <Compile Include="Shop\Customer_Specs_API.cs" />
+    <Compile Include="Shop\CustomerRegistration_Specs.cs" />
+    <Compile Include="Shop\CustomerRegistration_Specs_API.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestBase.cs" />
   </ItemGroup>

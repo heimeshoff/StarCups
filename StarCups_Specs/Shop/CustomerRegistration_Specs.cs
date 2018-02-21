@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using StarCups.Shop;
 
 namespace StarCups_Specs.Shop
 {
@@ -17,6 +18,21 @@ namespace StarCups_Specs.Shop
                     customer, "Marco", "Heimeshoff"));
             Then_expect(
                 Customer_registered(customer, "Marco", "Heimeshoff"));
+        }
+
+        [Test]
+        public void A_customer_can_register_only_once()
+        {
+            var customer = NewCustomer();
+
+            Given(
+                Customer_registered(
+                    customer, "Marco", "Heimeshoff"));
+            When(
+                Register_customer(
+                    customer, "Marco", "Heimeshoff"));
+            Then_expect(
+                Customer_registration_denied(customer, Reason.Already_registered));
         }
     }
 }

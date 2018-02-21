@@ -21,5 +21,10 @@ namespace StarCups_Specs.Shop
         {
             return new Customer_registered(customer, name, familyname);
         }
+
+        private Customer_registration_denied Customer_registration_denied(CustomerReference customer, Reason reason)
+        {
+            return new Customer_registration_denied(customer, reason);
+        }
     }
 }

@@ -17,7 +17,13 @@ namespace StarCups.Shop
         public void Register(CustomerReference customer, string name, string familyname)
         {
             if (!state.Customers.Contains(customer))
+            {
                 publish(new Customer_registered(customer, name, familyname));
+            }
+            else
+            {
+                publish(new Customer_registration_denied(customer, Reason.Already_registered));
+            }
         }
     }
 }

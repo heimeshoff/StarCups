@@ -46,6 +46,8 @@
     <Compile Include="Shop\Events\Customer_registered.cs" />
     <Compile Include="Shop\CustomerReference.cs" />
     <Compile Include="Shop\Commands\Register_customer.cs" />
+    <Compile Include="Shop\Events\Customer_registration_denied.cs" />
+    <Compile Include="Shop\Reason.cs" />
     <Compile Include="StarCups_Service.cs" />
   </ItemGroup>
   <ItemGroup />
