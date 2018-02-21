@@ -2,6 +2,9 @@
 using StarCups.Shop;
 using StarCups.Shop.Commands;
 using StarCups.Shop.Events;
+using StarCups.Shop.Information;
+using StarCups.Shop.Queries;
+using StarCups.Shop.References;
 
 namespace StarCups_Specs.Shop
 {
@@ -25,6 +28,16 @@ namespace StarCups_Specs.Shop
         private Customer_registration_denied Customer_registration_denied(CustomerReference customer, Reason reason)
         {
             return new Customer_registration_denied(customer, reason);
+        }
+
+        private Number_of_customers NumberOfCustomers()
+        {
+            return new Number_of_customers();
+        }
+
+        private Customer_Names Customer_Names()
+        {
+            return new Customer_Names();
         }
     }
 }

@@ -1,15 +1,17 @@
 using System;
 using System.Collections.Generic;
 using StarCups.Shop;
+using StarCups.Shop.CommandHandler;
 using StarCups.Shop.Commands;
+using StarCups.Shop.Readmodels;
 
 namespace StarCups
 {
-    public class StarCups_Service
+    public class StarCups_DomainServer
     {
         private readonly Action<object> _publish;
 
-        public StarCups_Service(Action<object> publish)
+        public StarCups_DomainServer(Action<object> publish)
         {
             _publish = publish;
         }

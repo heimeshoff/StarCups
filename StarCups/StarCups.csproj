@@ -41,14 +41,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shop\CustomerRegistration_State.cs" />
-    <Compile Include="Shop\Customers.cs" />
+    <Compile Include="Shop\CommandHandler\All_Customers.cs" />
+    <Compile Include="Shop\CommandHandler\CustomerRegistration.cs" />
     <Compile Include="Shop\Events\Customer_registered.cs" />
-    <Compile Include="Shop\CustomerReference.cs" />
+    <Compile Include="Shop\Queries\Customer_Names.cs" />
+    <Compile Include="Shop\Readmodels\Number_of_customers.cs" />
+    <Compile Include="Shop\References\CustomerReference.cs" />
+    <Compile Include="Shop\Queries\Number_of_customers.cs" />
     <Compile Include="Shop\Commands\Register_customer.cs" />
     <Compile Include="Shop\Events\Customer_registration_denied.cs" />
-    <Compile Include="Shop\Reason.cs" />
-    <Compile Include="StarCups_Service.cs" />
+    <Compile Include="Shop\Information\Reason.cs" />
+    <Compile Include="StarCups_DataServer.cs" />
+    <Compile Include="StarCups_DomainServer.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

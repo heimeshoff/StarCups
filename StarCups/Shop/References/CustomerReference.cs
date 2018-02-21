@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StarCups.Shop
+namespace StarCups.Shop.References
 {
     public struct CustomerReference
     {

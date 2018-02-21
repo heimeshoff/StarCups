@@ -6,7 +6,6 @@ using StarCups;
 namespace StarCups_Specs
 {
     // TBD:
-    // Projections
     // Full API Tests
     // Notifications
     // On the fly state changes in Domain
@@ -24,13 +23,13 @@ namespace StarCups_Specs
         protected void Given(params object[] events)
         {
             _history = events.ToList();
+            _actual_events = new List<object>();
         }
 
         protected void When(object command)
         {
-            _actual_events = new List<object>();
             var starcups_service = 
-                new StarCups_Service(
+                new StarCups_DomainServer(
                     (@event) => _actual_events.Add(@event));
             starcups_service.Handle(command, _history);
         }
@@ -44,5 +43,17 @@ namespace StarCups_Specs
         {
             return new List<object>();
         }
+
+        protected object Query(object query)
+        {
+            var events = 
+                _history
+                .Concat(_actual_events)
+                .ToList();
+
+            var starcups_data = new StarCups_DataServer(events);
+            return starcups_data.Query(query);
+        }
+
     }
 }

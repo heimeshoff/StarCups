@@ -1,3 +1,6 @@
+using StarCups.Shop.Information;
+using StarCups.Shop.References;
+
 namespace StarCups.Shop.Events
 {
     public struct Customer_registration_denied

@@ -1,4 +1,6 @@
-﻿namespace StarCups.Shop.Commands
+﻿using StarCups.Shop.References;
+
+namespace StarCups.Shop.Commands
 {
     public struct Register_customer
     {

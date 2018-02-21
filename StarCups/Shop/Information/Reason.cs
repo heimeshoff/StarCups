@@ -1,4 +1,4 @@
-namespace StarCups.Shop
+namespace StarCups.Shop.Information
 {
     public enum Reason
     {
